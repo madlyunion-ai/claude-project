@@ -1,5 +1,5 @@
-// 잿빛 심연 오프라인 캐시 (버전 dfb0e489)
-const C = 'ashen-dfb0e489', FILES = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
+// 잿빛 심연 오프라인 캐시 (버전 07b405b1)
+const C = 'ashen-07b405b1', FILES = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== C).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', e => { if (e.request.method !== 'GET') return;
