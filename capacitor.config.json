@@ -1,0 +1,7 @@
+{
+  "appId": "com.ashenabyss.game",
+  "appName": "잿빛 심연",
+  "webDir": "www",
+  "backgroundColor": "#050403",
+  "android": { "allowMixedContent": false, "captureInput": true, "webContentsDebuggingEnabled": false }
+}

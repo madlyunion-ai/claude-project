@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">잿빛 심연</string>
+    <string name="title_activity_main">잿빛 심연</string>
+    <string name="package_name">com.ashenabyss.game</string>
+    <string name="custom_url_scheme">com.ashenabyss.game</string>
+</resources>

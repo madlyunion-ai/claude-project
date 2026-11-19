@@ -1,0 +1,19 @@
+{
+  "name": "ashen-abyss",
+  "version": "1.0.0",
+  "private": true,
+  "description": "잿빛 심연 — 모바일 다크 판타지 RPG",
+  "scripts": {
+    "sync": "cap sync android",
+    "open": "cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/app": "^7.1.2",
+    "@capacitor/browser": "^7.0.5",
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
+  }
+}
