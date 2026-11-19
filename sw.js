@@ -1,5 +1,5 @@
-// 잿빛 심연 오프라인 캐시 (버전 c262f807)
-const C = 'ashen-c262f807', FILES = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './ext/ch6map.webp', './ext/ch6wall.webp'];
+// 잿빛 심연 오프라인 캐시 (버전 272c2476)
+const C = 'ashen-272c2476', FILES = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './ext/ch6map.webp', './ext/ch6wall.webp', './ext/grovebg.webp', './ext/grovedeco.webp'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== C).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', e => { if (e.request.method !== 'GET') return;
